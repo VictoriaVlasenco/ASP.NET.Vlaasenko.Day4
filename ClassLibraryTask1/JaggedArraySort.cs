@@ -18,7 +18,7 @@ namespace ClassLibraryTask1
             if (array.Length == 0) throw new NullReferenceException("Array is empty");
             if (array.Length == 1) return array[0];
             int max = array[0];
-            for (int i = 1; i < array.Length - 1; i++)
+            for (int i = 1; i < array.Length; i++)
             {
                 if (array[i] > max)
                 {
@@ -32,7 +32,7 @@ namespace ClassLibraryTask1
             if (array.Length == 0) throw new NullReferenceException("Array is empty");
             if (array.Length == 1) return array[0];
             int min = array[0];
-            for (int i = 1; i < array.Length - 1; i++)
+            for (int i = 1; i < array.Length; i++)
             {
                 if (array[i] < min)
                 {
@@ -53,7 +53,7 @@ namespace ClassLibraryTask1
             if (array.Length == 0) throw new NullReferenceException("Array is empty");
             if (array.Length == 1) return array[0];
             int max = Math.Abs(array[0]);
-            for (int i = 1; i < array.Length - 1; i++)
+            for (int i = 1; i < array.Length ; i++)
             {
                 if (Math.Abs(array[i]) > max)
                 {
